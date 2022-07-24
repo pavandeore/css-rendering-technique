@@ -1,0 +1,12 @@
+<script>
+//define function to load css
+var loadCss = function(){
+    var cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = '/css/open-ionic-icons/css/open-iconic.min.css';
+    var head = document.getElementsByTagName('head')[0];
+    head.parentNode.insertBefore(cssLink, head);
+};
+ 
+window.addEventListener('DOMContentLoaded', loadCss);
+</script>
